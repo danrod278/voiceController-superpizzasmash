@@ -202,6 +202,8 @@ invalid: ["Produto não encontrado no cardápio"]
         "model": "gpt-4o-mini"
     })
 
+
+
     # Definindo os headers corretamente
     headers = {
     'x-rapidapi-key': "c497809e7fmsh2c41bd3a9d5afe2p142abdjsn932596df0d3c",
@@ -222,4 +224,4 @@ comando = "quero um suco de maracuja e uma coca dois litros, quanto custa ?. tir
 retornoIA = enviarParaIA(comando)
 
 if "choices" in retornoIA:
-    print(retornoIA["result"])
+    print(retornoIA)
